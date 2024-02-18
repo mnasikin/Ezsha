@@ -1,0 +1,52 @@
+.ezsha-buttons {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;
+  padding: 0px;
+}
+.ezsha-share-text {
+  font-size: 11px;
+  font-weight: 200;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.ezsha-table {
+  border-collapse: collapse;
+  border: none;
+}
+.ezsha-facebook, .ezsha-twitter, .ezsha-whatsapp, .ezsha-cp {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.ezsha-facebook:hover,.ezsha-cp:hover {
+  background-color: #0056b3;
+}
+.ezsha-twitter:hover{
+  background-color: #2f4458;
+}
+.ezsha-whatsapp:hover{
+  background-color: rgb(15, 105, 19);
+}
+.ezsha-facebook,.ezsha-facebook:visited { background-color: #3b5998; }
+.ezsha-twitter { background-color: #0a0b0c; }
+.ezsha-whatsapp { background-color: #25d366; }
+.ezsha-cp { background-color: #007bff; }
+
+.fa { font-size: 150px; }
