@@ -31,8 +31,8 @@ function ezsha_assets() {
     // Enqueue JavaScript
     wp_enqueue_script('ezsha-main-scripts', plugin_dir_url(__FILE__) . 'assets/scripts.js', array('jquery'), '1.0.0', true);
 
-    // Enqueue Fontawesome
-    wp_enqueue_style( 'ezsha-fa-6', plugins_url( '/assets/fontawesome/css/all.min.css', __FILE__ ), array(), '6.5.1', 'all' );
+    // Enqueue Fontawesome CSS
+    wp_enqueue_style( 'ezsha-fa-6', plugins_url( '/assets/fontawesome/css/fa-custom.min.css', __FILE__ ), array(), '1.0.0', 'all' );
     wp_enqueue_style( 'ezsha-fab-6', plugins_url( '/assets/fontawesome/css/brands.min.css', __FILE__ ), array(), '6.5.1', 'all' );
 
     // Enqueue Font Awesome fonts

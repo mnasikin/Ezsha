@@ -6,8 +6,10 @@ A simple and lightwight plugin designed to effortlessly integrate share buttons 
 ## Features
 
 - No configuration needed
-- Localized Fontawesome icons
+- Localized Fontawesome icons (Only used fonts added)
 - Lightweight plugin
+- Compatible with woocommerce and custom post type
+- Fontawesome v6.x
 
 
 ## Installations
