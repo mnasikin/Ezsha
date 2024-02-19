@@ -21,8 +21,8 @@ function ezshaCp() {
   inputElement.select();
   document.execCommand("copy");
   document.body.removeChild(inputElement);
-  copyLinkButton.innerHTML = '<i class="far fa-check-square"></i>';
+  copyLinkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
   setTimeout(function () {
-    copyLinkButton.innerHTML = '<i class="fas fa-copy"></i>';
+    copyLinkButton.innerHTML = '<i class="fa-solid fa-copy"></i>';
   }, 1000);
 }
