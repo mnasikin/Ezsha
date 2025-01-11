@@ -503,6 +503,8 @@
         content: "\f082"; }
     .fa-square-check::before {
         content: "\f14a"; }
+    .fa-share::before {
+        content: "\f1e0"; }
 /* End Custom */
 
 :root, :host {

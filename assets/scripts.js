@@ -26,3 +26,6 @@ function ezshaCp() {
     copyLinkButton.innerHTML = '<i class="fa-solid fa-copy"></i>';
   }, 1000);
 }
+function ezshaToggle() {
+    document.getElementById('ezshaButtons').classList.toggle('show');
+}

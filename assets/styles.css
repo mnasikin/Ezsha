@@ -1,10 +1,28 @@
+.ezshaToggle {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0F1035;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Ensuring it stays above other elements */
+}
+.ezshaToggle:hover {
+  background-color: #0F1035;
+}
 .ezsha-buttons {
   position: fixed;
-  left: 0;
+  left: -100px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 99999;
-  padding: 0px;
+  transition: left 0.3s;
+  z-index: 999;
+}
+.ezsha-buttons.show {
+    left: 50px;
 }
 .ezsha-share-text {
   font-size: 11px;
@@ -16,6 +34,9 @@
 .ezsha-table {
   border-collapse: collapse;
   border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .ezsha-facebook, .ezsha-twitter, .ezsha-whatsapp, .ezsha-cp {
   margin-bottom: 5px;
