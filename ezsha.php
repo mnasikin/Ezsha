@@ -3,7 +3,7 @@
 Plugin Name: Ezsha
 Plugin URI: https://github.com/mnasikin/ezsha
 Description: A simple and lightwight plugin designed to effortlessly integrate share buttons adorned with captivating Font Awesome icons into your single posts and pages.
-Version: 1.0.2
+Version: 1.0.1
 Requires at least: 5.5
 Requires PHP: 7.4
 Author: Nasikin

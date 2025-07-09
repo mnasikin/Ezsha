@@ -1,44 +1,60 @@
-
 # Ezsha
 
-A simple and lightwight plugin designed to effortlessly integrate share buttons adorned with captivating Font Awesome icons into your single posts and pages.
-
-## Features
-
-- No configuration needed
-- Localized Fontawesome icons (Only used fonts added)
-- Lightweight plugin
-- Compatible with woocommerce and custom post type
-- Fontawesome v6.x
+A simple and lightweight plugin designed to effortlessly integrate share buttons adorned with captivating Font Awesome icons into your single posts and pages.
 
 
-## Installations
+## ✨ Features
 
-Here is quick start to install this plugin into your wordpress
+- No configuration needed – plug and play
+- Localized Fontawesome icons (loads only the necessary fonts)
+- Compatible with WooCommerce and custom post types
+- Optimized performance and minimal footprint
+- Fontawesome v6.x integration
 
-1. Download this repository
-2. Login into your WordPress site
-3. Open the Plugins > Add new Plugins > Uploads
-4. Upload the zip file you've downloaded
-5. Activate
-6. Now your single pages and posts will have share buttons
-## Tested On
+---
 
-- WordPress 6.4.1
-- WordPress 6.4.2
-- WordPress 6.4.3
-## License
+## 🚀 Installation
 
-[MIT](https://choosealicense.com/licenses/mit/)
+1. Download this repository as a ZIP file.
+2. Login to your WordPress admin dashboard.
+3. Go to **Plugins > Add New > Upload Plugin**
+4. Upload the downloaded ZIP file and click **Install**
+5. Activate the plugin
+6. Share buttons will appear on your single posts, pages, and products
 
+---
 
-## Screenshots
+## 🖼️ Screenshots
 
-On Single Page
-![Image](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Page.png?updatedAt=1708258363092)
+### On Single Page
+![Single Page](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Page.png?updatedAt=1708258363092)
 
-On Single Post
-![Image](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Post.png?updatedAt=1708258450401)
+### On Single Post
+![Single Post](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Post.png?updatedAt=1708258450401)
 
-On Single Product
-![Image](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Product.png?updatedAt=1708258366281)
+### On Single Product
+![Single Product](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Product.png?updatedAt=1708258366281)
+
+---
+
+## ❓ FAQ
+
+### Does this plugin require any setup?
+Nope! It works out of the box—no settings or configuration required.
+
+### Is it compatible with WooCommerce?
+Yes, it displays share buttons on WooCommerce single product pages.
+
+---
+
+## 🛠️ Changelog
+
+### 1.0.3
+- Initial public release
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.  
+See the [license page](https://choosealicense.com/licenses/mit) for details.
