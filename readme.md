@@ -2,6 +2,8 @@
 
 A simple and lightweight plugin designed to effortlessly integrate share buttons adorned with captivating Font Awesome icons into your single posts and pages.
 
+[![Download Plugin](https://img.shields.io/badge/download_plugin-000?style=for-the-badge&logo=download&logoColor=white)](https://nasikin.web.id/download/ezha.zip)
+
 
 ## ✨ Features
 
@@ -49,7 +51,7 @@ Yes, it displays share buttons on WooCommerce single product pages.
 
 ## 🛠️ Changelog
 
-### 1.0.3
+### 1.0.1
 - Initial public release
 
 ---
