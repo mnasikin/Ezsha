@@ -5,7 +5,7 @@ Tags: share buttons, fontawesome, social share, icons, woocommerce
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 2.0.0
 License: MIT
 License URI: https://github.com/mnasikin/ezsha/blob/master/LICENSE
 
@@ -46,14 +46,18 @@ Nope! It works out of the box—no settings or configuration required.
 Yes, it displays share buttons on WooCommerce single product pages.
 
 == Changelog ==
+= 2.0.0 =
+* Remove fontawesome library. using direct SVG
+* Add animation on share button
+* Layout change
 
 = 1.0.1 =
 * Initial public release
 
 == Upgrade Notice ==
 
-= 1.0.1 =
-Stable release. Just install and activate.
+= 2.0.0 =
+Please check the changelog for more information
 
 == License ==
 

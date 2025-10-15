@@ -8,10 +8,9 @@ A simple and lightweight plugin designed to effortlessly integrate share buttons
 ## ✨ Features
 
 - No configuration needed – plug and play
-- Localized Fontawesome icons (loads only the necessary fonts)
+- Direct fontawesome SVG
 - Compatible with WooCommerce and custom post types
 - Optimized performance and minimal footprint
-- Fontawesome v6.x integration
 
 ---
 
@@ -29,13 +28,13 @@ A simple and lightweight plugin designed to effortlessly integrate share buttons
 ## 🖼️ Screenshots
 
 ### On Single Page
-![Single Page](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Page.png?updatedAt=1708258363092)
+![Single Page](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Page.png)
 
 ### On Single Post
-![Single Post](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Post.png?updatedAt=1708258450401)
+![Single Post](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Post.png)
 
 ### On Single Product
-![Single Product](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Product.png?updatedAt=1708258366281)
+![Single Product](https://ik.imagekit.io/vbsmdqxuemd/ezsha/On%20Single%20Product.png)
 
 ---
 
@@ -50,6 +49,12 @@ Yes, it displays share buttons on WooCommerce single product pages.
 ---
 
 ## 🛠️ Changelog
+
+### 2.0.0
+- Remove fontawesome library. using direct SVG
+- Add animation on share button
+- Layout change
+
 
 ### 1.0.1
 - Initial public release

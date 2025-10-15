@@ -1,73 +1,246 @@
-.ezshaToggle {
-    position: fixed;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #0F1035;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000; /* Ensuring it stays above other elements */
-}
-.ezshaToggle:hover {
-  background-color: #0F1035;
-}
-.ezsha-buttons {
+/* === DESKTOP === */
+.ezsha_Toggle {
   position: fixed;
-  left: -100px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  transition: left 0.3s;
-  z-index: 999;
-}
-.ezsha-buttons.show {
-    left: 50px;
-}
-.ezsha-share-text {
-  font-size: 11px;
-  font-weight: 200;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-.ezsha-table {
-  border-collapse: collapse;
+  background-color: #0F1035;
+  color: #fff;
   border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.25s ease, transform 0.25s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.ezsha_Toggle:hover {
+  background-color: #172552;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* (vertical sidebar) */
+.ezsha_buttons {
+  position: fixed;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.ezsha_buttons.show {
+  left: 75px;
+}
+
+/* social button */
+.ezsha_facebook,
+.ezsha_twitter,
+.ezsha_whatsapp,
+.ezsha_copy {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  color: #fff;
+  font-size: 20px;
+}
+.ezsha_facebook { background-color: #3b5998; }
+.ezsha_twitter { background-color: #000; }
+.ezsha_whatsapp { background-color: #25d366; }
+.ezsha_copy { background-color: #007bff; }
+.ezsha_facebook:hover { background-color: #2d4373; }
+.ezsha_twitter:hover { background-color: #111; }
+.ezsha_whatsapp:hover { background-color: #1da851; }
+.ezsha_copy:hover { background-color: #005ecb; }
+
+/* wrapper */
+.ezsha_group {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.ezsha-facebook, .ezsha-twitter, .ezsha-whatsapp, .ezsha-cp {
-  margin-bottom: 5px;
-  margin-left: 5px;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  background-color: #007bff;
+
+.ezsha_buttons button svg {
+  width: 26px !important;
+  height: 26px !important;
+  fill: currentColor;
+  flex-shrink: 0;
+  display: block;
+  pointer-events: none; /* biar klik tetap ke tombol, bukan SVG */
+}
+
+.ezsha_Toggle svg {
+  width: 22px !important;
+  height: 22px !important;
+  fill: currentColor;
+  flex-shrink: 0;
+  display: block;
+  pointer-events: none; /* biar klik tetap ke tombol, bukan SVG */
+}
+
+/* === animation === */
+#ezsha_copy svg {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#ezsha_copy.animating svg {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+
+/* === MOBILE === */
+@media (max-width: 768px) {
+  /* Tombol utama */
+  .ezsha_Toggle {
+  position: fixed !important;
+  left: 50% !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 20px !important;
+  transform: translateX(-50%) !important;
+  background-color: #0F1035;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 20px; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  z-index: 1001;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
-.ezsha-facebook:hover,.ezsha-cp:hover {
-  background-color: #0056b3;
-}
-.ezsha-twitter:hover{
-  background-color: #2f4458;
-}
-.ezsha-whatsapp:hover{
-  background-color: rgb(15, 105, 19);
-}
-.ezsha-facebook,.ezsha-facebook:visited { background-color: #3b5998; }
-.ezsha-twitter { background-color: #0a0b0c; }
-.ezsha-whatsapp { background-color: #25d366; }
-.ezsha-cp { background-color: #007bff; }
 
-.fa { font-size: 150px; }
+  /* share panel */
+  .ezsha_buttons {
+    position: fixed !important;
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 85px !important;
+    transform: translateX(-50%) translateY(10px) scale(0.9);
+    opacity: 0;
+    visibility: hidden;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 50px;
+    padding: 8px 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* animation */
+  .ezsha_buttons.show {
+    transform: translateX(-50%) translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* social button */
+  .ezsha_facebook,
+  .ezsha_twitter,
+  .ezsha_whatsapp,
+  .ezsha_copy {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+
+  /* wrapper */
+  .ezsha_buttons .ezsha_group {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 12px !important;
+  }
+
+  /* remove button */
+  .ezsha-table,
+  .ezsha_buttons table,
+  .ezsha_buttons tr,
+  .ezsha_buttons td {
+    display: contents !important;
+    border: none !important;
+  }
+    /* base animation */
+  @keyframes bubbleIn {
+    0% {
+      transform: translateY(20px) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes bubbleOut {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(20px) scale(0.8);
+      opacity: 0;
+    }
+  }
+
+  /* add animation each button */
+  .ezsha_buttons.show .ezsha_facebook {
+    animation: bubbleIn 0.35s ease forwards;
+    animation-delay: 0.05s;
+  }
+
+  .ezsha_buttons.show .ezsha_twitter {
+    animation: bubbleIn 0.35s ease forwards;
+    animation-delay: 0.1s;
+  }
+
+  .ezsha_buttons.show .ezsha_whatsapp {
+    animation: bubbleIn 0.35s ease forwards;
+    animation-delay: 0.15s;
+  }
+
+  .ezsha_buttons.show .ezsha_copy {
+    animation: bubbleIn 0.35s ease forwards;
+    animation-delay: 0.2s;
+  }
+
+  /* close animation */
+  .ezsha_buttons:not(.show) .ezsha_facebook,
+  .ezsha_buttons:not(.show) .ezsha_twitter,
+  .ezsha_buttons:not(.show) .ezsha_whatsapp,
+  .ezsha_buttons:not(.show) .ezsha_copy {
+    animation: bubbleOut 0.25s ease forwards;
+  }
+
+}
