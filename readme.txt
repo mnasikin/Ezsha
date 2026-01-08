@@ -3,9 +3,9 @@ Contributors: silversh
 Donate link: https://paypal.me/StoreDot2
 Tags: share buttons, fontawesome, social share, icons, woocommerce
 Requires at least: 5.5
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: MIT
 License URI: https://github.com/mnasikin/ezsha/blob/master/LICENSE
 
@@ -46,6 +46,10 @@ Nope! It works out of the box—no settings or configuration required.
 Yes, it displays share buttons on WooCommerce single product pages.
 
 == Changelog ==
+= 2.0.1 =
+* Compability check with wordpress 6.9
+* Remove console debug on fail
+
 = 2.0.0 =
 * Remove fontawesome library. using direct SVG
 * Add animation on share button
@@ -56,9 +60,9 @@ Yes, it displays share buttons on WooCommerce single product pages.
 
 == Upgrade Notice ==
 
-= 2.0.0 =
+= 2.0.1 =
 Please check the changelog for more information
 
 == License ==
 
-MIT License - [https://choosealicense.com/licenses/mit](https://choosealicense.com/licenses/mit)
+MIT License - [https://github.com/mnasikin/Ezsha/blob/main/LICENSE](https://github.com/mnasikin/Ezsha/blob/main/LICENSE)

@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
             url: url
           });
         } catch (err) {
-          console.warn("Share dibatalkan atau gagal:", err);
+          // console.warn("Share dibatalkan atau gagal:", err);
           ezsha_Toggle();
         }
       } else {
